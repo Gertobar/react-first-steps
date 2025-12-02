@@ -17,13 +17,13 @@ const myStiles: CSSProperties = {
 
 export const MyAwesomeApp = () => {
   return (
-    <>
+    <div>
       <h1>{firstName}</h1>
       <h2>{lastName}</h2>
-      <p>{favoriteSoccerTeams.join(", ")}</p>
+      <p className="my-favorite-class">{favoriteSoccerTeams.join(", ")}</p>
       <p>{2 + 2}</p>
       <p>{isactive ? "active" : "inactive"}</p>
       <p style={myStiles}>{JSON.stringify(address)}</p>
-    </>
+    </div>
   );
 };
